@@ -1,0 +1,10 @@
+{
+  "libros": [
+    {
+      "titulo": "como actualizar",
+      "fecha": "2023",
+      "autor": "yo",
+      "id": 1
+    }
+  ]
+}

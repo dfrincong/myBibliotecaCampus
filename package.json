@@ -1,0 +1,16 @@
+{
+  "name": "mybibliotecacampus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 5013 --host 127.0.0.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "0.17.3"
+  }
+}
