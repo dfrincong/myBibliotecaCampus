@@ -33,8 +33,26 @@
       "id": 1
     }
   ],
-  "prestamo": [],
-  "reserva": [],
+  "prestamo": [
+    {
+      "usuarioId": 1,
+      "libroId": 1,
+      "fechaPrestamo": "2023-10-05",
+      "fechaDevolucion": "2023-10-20",
+      "estado": "en curso",
+      "id": 1
+    }
+  ],
+  "reserva": [
+    {
+      "usuarioId": 1,
+      "libroId": 1,
+      "fechaReservaInit": "2023-10-05",
+      "fechaReservaFin": "2023-11-29",
+      "estado": "en curso",
+      "id": 1
+    }
+  ],
   "autor": [
     {
       "nombre": "Philipe",
