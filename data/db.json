@@ -2,7 +2,19 @@
   "categoria": [],
   "editorial": [],
   "estado-libro": [],
-  "libro": [],
+  "libro": [
+    {
+      "titulo": "Prometeo encadenado 34",
+      "fechaLanzamiento": "2022-08-01",
+      "autorId": 1,
+      "categoriaId": 1,
+      "editorialId": 1,
+      "isbn": "1675814",
+      "numPaginacion": 296,
+      "estadoId": 1,
+      "id": 1
+    }
+  ],
   "prestamo": [],
   "reserva": [],
   "autor": [],
