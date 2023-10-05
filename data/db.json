@@ -1,7 +1,25 @@
 {
-  "categoria": [],
-  "editorial": [],
-  "estado-libro": [],
+  "categoria": [
+    {
+      "nombre": "drama",
+      "id": 1
+    }
+  ],
+  "editorial": [
+    {
+      "nombre": "Sun",
+      "direccion": "carrera 56 #112",
+      "telefono": "3201569874",
+      "id": 1
+    }
+  ],
+  "estado-libro": [
+    {
+      "nombre": "excelente",
+      "descripcion": "perfectas condiciones",
+      "id": 1
+    }
+  ],
   "libro": [
     {
       "titulo": "Prometeo encadenado 34",
@@ -17,6 +35,22 @@
   ],
   "prestamo": [],
   "reserva": [],
-  "autor": [],
-  "usuario": []
+  "autor": [
+    {
+      "nombre": "Philipe",
+      "apellido": "dos Santos",
+      "nacionalidad": "brasileño",
+      "id": 1
+    }
+  ],
+  "usuario": [
+    {
+      "nombre": "Juan",
+      "apellido": "Castro",
+      "direccion": "Avenida Guayacanes",
+      "telefono": "3201456897",
+      "email": "jr@gmail.com",
+      "id": 1
+    }
+  ]
 }

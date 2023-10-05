@@ -76,13 +76,12 @@ export const deleteOne = async(id)=>{
 
 // actualizar uno
 export const putOne = async(obj={})=>{
-    let all = undefined;
     const {id} = obj;
     if(typeof id !== "number") return {status: 400,  message: `el dato '${id}' no coincide`};
     obj = validarExtructura(obj);
     if(obj.status) return obj;
     const {...objUpdate} = obj;
-    obj = {...all, ...objUpdate};
+    obj = {...objUpdate};
     config.method = "PUT";
     config.body = JSON.stringify(obj);
     let res = await (await fetch(`${uri}/libro/${id}`, config)).json();
