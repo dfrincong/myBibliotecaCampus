@@ -72,9 +72,9 @@ export const putOne = async(obj={})=>{
     // console.log(res);
     return res;
 }
-console.log(await putOne({
-    nombre:"Philipe", 
-    apellido: "dos Santos",
-    nacionalidad:"brasileño",
-    id:1
-}));
+// console.log(await putOne({
+//     nombre:"Philipe", 
+//     apellido: "dos Santos",
+//     nacionalidad:"brasileño",
+//     id:1
+// }));

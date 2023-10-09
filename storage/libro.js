@@ -50,7 +50,7 @@ export const post = async(obj={})=>{
     config.body = JSON.stringify(obj);
     let res = await (await fetch(`${uri}/libro`, config)).json();
     // console.log(res);
-    return res
+    return (res.id) ? {status: 201, message: "El libro fue creado correctamente", id: res.id} : undefined;
 };
 // console.log(await post({
 //     titulo:"El olor del miedo", 

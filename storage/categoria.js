@@ -1,3 +1,5 @@
+import { getOne as getOneCategoria  }  from "./categoria.js";
+import { getOne as getOneAutor  }  from "./autor.js";
 import env from "../config.js";
 const uri = `${env.ssl + env.hostName}:${env.port}`;
 const config = {method: undefined, headers: {"Content-Type":"application/json"}};
@@ -62,4 +64,20 @@ export const putOne = async(obj={})=>{
     // console.log(res);
     return res;
 }
-console.log(await putOne({nombre:"drama", id:1}));
+// console.log(await putOne({nombre:"drama", id:1}));
+
+export const getRelationships = async()=>{
+    config.method = "GET";
+    // config.body = "";
+    let res = await (await fetch(`${uri}/libro`, config)).json();
+    res = await Promise.all(res.map(async(data,id)=>{
+        let {categoriaId:catId, autorId:autId} = data;
+        let cat = await getOneCategoria(catId);
+        let aut = await getOneAutor(autId);
+        data.categoriaId = cat;
+        data.autorId = aut;
+        return data;
+    }))
+   
+    return res;
+}
